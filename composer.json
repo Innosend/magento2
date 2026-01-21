@@ -1,0 +1,10 @@
+{
+  "name": "innosend/magento2",
+  "description": "Innosend for Magento 2 (meta package)",
+  "type": "metapackage",
+  "require": {
+    "innosend/magento2-integration": ">=1.0.0",
+    "innosend/magento2-pickup-points": ">=1.0.0",
+    "innosend/magento2-order-connector": ">=1.0.0"
+  }
+}
