@@ -18,7 +18,6 @@
     "require": {
         "innosend/magento2-integration": "1.1.1",
         "innosend/magento2-pickup-points": "1.1.1",
-        "innosend/magento2-order-connector": "1.1.1",
-        "innosend/magento2-checkout-hyva": "1.1.1"
+        "innosend/magento2-order-connector": "1.1.1"
     }
 }
