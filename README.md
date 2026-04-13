@@ -1,53 +1,5 @@
 # Innosend for Magento 2
 
-**Version 1.1.0**
-
-Meta package that installs the full Innosend suite for Magento 2: API integration, pickup points, and order synchronization.
-
----
-
-## What's new in 1.1.0
-
-- **Single API Token** (Bearer auth) replaces the old API Key + API Secret. Configure once — used by all modules.
-- Config paths simplified: `innosend_api/configuration/api_token` (was `pickup_points/api_token`).
-- Removed: `api_key`, `api_secret`, `allow_mutations`, `enable_pickup_points` admin fields.
-- Data patch migrates existing config automatically on `setup:upgrade`.
-- PHP 7.x support dropped — requires PHP 8.1+.
-
----
-
-## Preparations (do this first)
-
-**The Innosend developer must complete these steps before installing or updating the module.**
-
-### 1. Add the private Packagist repository
-
-From the Magento 2 root directory:
-
-```bash
-composer config repositories.private-packagist composer https://repo.packagist.com/falconmedia/innosend/
-```
-
-### 2. Developer: global auth (for updating)
-
-For read/write access on your developer machine (`composer require`, `composer update`), use the Packagist username and read/write token provided by Innosend:
-
-```bash
-composer config --global --auth http-basic.repo.packagist.com YOUR_PACKAGIST_USERNAME YOUR_PACKAGIST_READ_WRITE_TOKEN
-```
-
-### 3. Deployment: auth.json (read-only)
-
-For deploying to the client server (CI/CD or production), use the read-only token:
-
-```bash
-composer config --auth http-basic.repo.packagist.com token YOUR_PACKAGIST_READ_ONLY_TOKEN
-```
-
-The read-only token is for `composer install` only — use it only on deployment targets.
-
----
-
 ## Installation
 
 ### Fresh install
@@ -110,22 +62,6 @@ php bin/magento setup:static-content:deploy -f
 1. Go to **Stores → Configuration → Innosend → Pickup Points**
 2. Enable pickup points, select carriers, and configure map options
 3. Save config
-
----
-
-## Optional: Hyvä Checkout
-
-If your store uses Hyvä Checkout, install the dedicated Alpine.js pickup point component:
-
-```bash
-composer require innosend/magento2-checkout-hyva
-php bin/magento module:enable Innosend_CheckoutHyva
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
-php bin/magento cache:flush
-```
-
-No additional configuration required.
 
 ---
 
