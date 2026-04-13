@@ -97,7 +97,6 @@ php bin/magento setup:static-content:deploy -f
 | `innosend/magento2-integration` | `Innosend_Integration` | 1.1.0 | API client, Bearer token auth, config, healthcheck |
 | `innosend/magento2-pickup-points` | `Innosend_PickupPoints` | 1.1.0 | Pickup points in checkout |
 | `innosend/magento2-order-connector` | `Innosend_OrderConnector` | 1.0.3 | Order and status sync |
-| `innosend/magento2-checkout-hyva` | `Innosend_CheckoutHyva` | 1.0.1 | Hyvä Checkout pickup points (optional) |
 
 ---
 
