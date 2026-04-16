@@ -2,6 +2,8 @@
 
 ## Installation
 
+For the complete documentation go to [innosend.gitlab.io](https://innosend.gitlab.io)
+
 ### Fresh install
 
 ```bash
@@ -16,7 +18,7 @@ php bin/magento cache:flush
 
 ```bash
 composer update innosend/magento2
-php bin/magento setup:upgrade      # runs MigrateConfigPaths data patch automatically
+php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 php bin/magento cache:flush
 ```
