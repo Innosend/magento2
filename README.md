@@ -36,7 +36,7 @@ php bin/magento setup:static-content:deploy -f
 | Requirement | Version |
 |-------------|---------|
 | Magento 2 | 2.4.x (framework 102.x – 103.x) |
-| PHP | 8.1, 8.2, or 8.3 |
+| PHP | 8.1, 8.2, 8.3, 8.4, 8.5 |
 | Composer | 2.x |
 | cURL | Any version bundled with PHP |
 
@@ -96,9 +96,9 @@ php bin/magento setup:static-content:deploy -f
 
 | Package | Magento module | Version | Purpose |
 |---------|---------------|---------|---------|
-| `innosend/magento2-integration` | `Innosend_Integration` | 1.1.0 | API client, Bearer token auth, config, healthcheck |
-| `innosend/magento2-pickup-points` | `Innosend_PickupPoints` | 1.1.0 | Pickup points in checkout |
-| `innosend/magento2-order-connector` | `Innosend_OrderConnector` | 1.0.3 | Order and status sync |
+| `innosend/magento2-integration` | `Innosend_Integration` | 1.2.0 | API client, Bearer token auth, config, healthcheck |
+| `innosend/magento2-pickup-points` | `Innosend_PickupPoints` | 1.2.0 | Pickup points in checkout |
+| `innosend/magento2-order-connector` | `Innosend_OrderConnector` | 1.2.0 | Order and status sync |
 
 ---
 
