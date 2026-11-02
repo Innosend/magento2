@@ -96,9 +96,9 @@ php bin/magento setup:static-content:deploy -f
 
 | Package | Magento module | Version | Purpose |
 |---------|---------------|---------|---------|
-| `innosend/magento2-integration` | `Innosend_Integration` | 1.2.0 | API client, Bearer token auth, config, healthcheck |
-| `innosend/magento2-pickup-points` | `Innosend_PickupPoints` | 1.2.0 | Pickup points in checkout |
-| `innosend/magento2-order-connector` | `Innosend_OrderConnector` | 1.2.0 | Order and status sync |
+| `innosend/magento2-integration` | `Innosend_Integration` | 1.3.0 | API client, Bearer token auth, config, healthcheck |
+| `innosend/magento2-pickup-points` | `Innosend_PickupPoints` | 1.3.0 | Pickup points in checkout |
+| `innosend/magento2-order-connector` | `Innosend_OrderConnector` | 1.3.0 | Order and status sync |
 
 ---
 
